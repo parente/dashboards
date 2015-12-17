@@ -206,8 +206,10 @@ define([
         IPython.keyboard_manager.actions.register(layoutView, 'layout-view', 'urth');
         IPython.keyboard_manager.actions.register(dashboardView, 'dashboard-view', 'urth');
 
+        console.log('ADDING TOOLBAR');
         IPython.toolbar.add_buttons_group(['urth.notebook-view', 'urth.layout-view', 'urth.dashboard-view'],
                 'urth-dashboard-view-toolbar-buttons');
+        console.log('ADDING TOOLBAR');
         $('#urth-dashboard-view-toolbar-buttons')
             .addClass('urth-dashboard-toolbar-buttons')
             .prepend('<span class="navbar-text">View:</span>');

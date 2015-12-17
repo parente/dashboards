@@ -29,7 +29,8 @@ build:
 		apt-get install curl && \
 		curl --silent --location https://deb.nodesource.com/setup_0.12 | sudo bash - && \
 		apt-get install --yes nodejs && \
-		npm install -g bower'
+		npm install -g bower && \
+		pip install --pre -U notebook'
 	@docker commit bower-build $(BOWER_REPO)
 	@-docker rm -f bower-build
 
@@ -78,7 +79,7 @@ _dev: configs js
 		-v `pwd`/etc/jupyter_notebook_config.py:$(NB_HOME)/.jupyter/jupyter_notebook_config.py \
 		-v `pwd`/etc/notebook.json:$(NB_HOME)/.jupyter/nbconfig/notebook.json \
 		-v `pwd`/etc/notebooks:/home/jovyan/work \
-		$(REPO) $(CMD)
+		$(BOWER_REPO) $(CMD)
 
 dev-with-widgets: dev-with-widgets-$(PYTHON)
 

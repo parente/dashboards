@@ -33,11 +33,11 @@ define([
             // Gridstack uses jquery-ui 1.11 (supports AMD) while notebook uses 1.10 (non-amd).
             // Map Gridstack to the old non-AMD jquery-ui used by notebook.
             Gridstack: {
-                'jquery-ui/core': 'jqueryui',
-                'jquery-ui/mouse': 'jqueryui',
-                'jquery-ui/widget': 'jqueryui',
-                'jquery-ui/resizable': 'jqueryui',
-                'jquery-ui/draggable': 'jqueryui'
+                'jquery-ui/core': 'jquery-ui',
+                'jquery-ui/mouse': 'jquery-ui',
+                'jquery-ui/widget': 'jquery-ui',
+                'jquery-ui/resizable': 'jquery-ui',
+                'jquery-ui/draggable': 'jquery-ui'
             }
         }
     });
