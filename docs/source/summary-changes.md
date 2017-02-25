@@ -2,6 +2,15 @@
 
 See `git log` for a more detailed summary of changes.
 
+## 0.7
+
+## 0.7.0 (2017-02-25)
+
+* Fix active cell CSS styling for notebook 5.0
+* Fix quick-setup for notebook 5.0
+* Update documentation for notebook>=4.2
+* Switch from docker to a conda based dev / test setup
+
 ## 0.6
 
 ### 0.6.0 (2016-06-17)
